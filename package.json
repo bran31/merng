@@ -1,0 +1,17 @@
+{
+  "name": "fcc",
+  "version": "1.0.0",
+  "description": "Learn GraphQL",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index"
+  },
+  "author": "Tokal",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server": "^2.21.2",
+    "graphql": "^15.5.0",
+    "mongoose": "^5.12.1",
+    "nodemon": "^2.0.7"
+  }
+}
