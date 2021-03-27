@@ -4,7 +4,8 @@
   "description": "Learn GraphQL",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index"
+    "start": "nodemon index",
+    "serve": "node index"
   },
   "author": "Tokal",
   "license": "ISC",

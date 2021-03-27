@@ -30,10 +30,13 @@ module.exports = {
       const { username } = checkAuth(context);
 
       const post = await Post.findById(postId);
-
       if (post) {
         const commentIndex = post.comments.findIndex((c) => c.id === commentId);
-
+        console.log("Comment ID is: " + commentId);
+        console.log("Post ID is: " + postId);
+        console.log(commentIndex);
+        console.log("---" + username + "---");
+        console.log(post.comments[commentIndex].username);
         if (post.comments[commentIndex].username === username) {
           post.comments.splice(commentIndex, 1);
           await post.save();
