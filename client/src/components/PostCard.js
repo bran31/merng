@@ -15,7 +15,7 @@ function PostCard({
     console.log("Comment on post");
   }
   return (
-    <Card fluid style={{ height: 250 }}>
+    <Card fluid>
       <Card.Content>
         <Image
           floated="right"
@@ -30,11 +30,11 @@ function PostCard({
       </Card.Content>
       <Card.Content extra>
         <Button as="div" labelPosition="right" onClick={likePost}>
-          <Button color="red" basic>
+          <Button color="teal" basic>
             <Icon name="heart" />
             Like
           </Button>
-          <Label as="a" basic color="red" pointing="left">
+          <Label as="a" basic color="teal" pointing="left">
             {likeCount}
           </Label>
         </Button>
